@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="mobile">
+          <button class="mobile__button" type="button" data-menu-button>
+            <svg
+              class="mobile__svg"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="mobile-menu"
+            >
+              <use
+                class="mobile__open"
+                href="./images/icons.svg#mobile-open"
+              ></use>
+              <use
+                class="mobile__close"
+                href="./images/icons.svg#mobile-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link mobile-menu__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-list">
+                  <a class="mobile-menu__contacts-tel" href="tel:380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-list">
+                  <a
+                    class="mobile-menu__contacts-mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__social">
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <a class="logo logo--up" href="./index.html">
+            Web<span class="logo__header">Studio</span></a
+          >
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-quickly">
+          <li class="contact-quickly__list">
+            <a class="contact-quickly__link" href="mailto:info@devstudio.com">
+              <svg class="contact-quickly__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-quickly__list">
+            <a class="contact-quickly__link" href="tel:380961111111">
+              <svg class="contact-quickly__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Примеры работ веб-студии</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__button" type="button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/1-technokrjak_d.jpg    1x,
+                        ./images/portfolio/1-technokrjak_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/1-technokrjak_t.jpg    1x,
+                        ./images/portfolio/1-technokrjak_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/1-technokrjak_m.jpg    1x,
+                        ./images/portfolio/1-technokrjak_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/1-technokrjak_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer__description">
+                  <h2 class="customer__company">Технокряк</h2>
+                  <p class="customer__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/2-new-orlean_d.jpg    1x,
+                        ./images/portfolio/2-new-orlean_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/2-new-orlean_t.jpg    1x,
+                        ./images/portfolio/2-new-orlean_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/2-new-orlean_m.jpg    1x,
+                        ./images/portfolio/2-new-orlean_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/2-new-orlean_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer__description">
+                  <h2 class="customer__company">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="customer__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/3-seafood_d.jpg    1x,
+                        ./images/portfolio/3-seafood_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/3-seafood_t.jpg    1x,
+                        ./images/portfolio/3-seafood_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/3-seafood_m.jpg    1x,
+                        ./images/portfolio/3-seafood_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/3-seafood_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Ресторан Seafood</h2>
+                  <p class="customer__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/4-prime_d.jpg    1x,
+                        ./images/portfolio/4-prime_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/4-prime_t.jpg    1x,
+                        ./images/portfolio/4-prime_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/4-prime_m.jpg    1x,
+                        ./images/portfolio/4-prime_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/4-prime_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Проект Prime</h2>
+                  <p class="customer__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/5-boxes_d.jpg    1x,
+                        ./images/portfolio/5-boxes_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/5-boxes_t.jpg    1x,
+                        ./images/portfolio/5-boxes_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/5-boxes_m.jpg    1x,
+                        ./images/portfolio/5-boxes_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/5-boxes_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Проект Boxes</h2>
+                  <p class="customer__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/6-inspiration_d.jpg    1x,
+                        ./images/portfolio/6-inspiration_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/6-inspiration_t.jpg    1x,
+                        ./images/portfolio/6-inspiration_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/6-inspiration_m.jpg    1x,
+                        ./images/portfolio/6-inspiration_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/6-inspiration_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Inspiration has no Borders</h2>
+                  <p class="customer__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/7-limited-edition_d.jpg    1x,
+                        ./images/portfolio/7-limited-edition_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/7-limited-edition_t.jpg    1x,
+                        ./images/portfolio/7-limited-edition_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/7-limited-edition_m.jpg    1x,
+                        ./images/portfolio/7-limited-edition_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/7-limited-edition_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Издание Limited Edition</h2>
+                  <p class="customer__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/8-lab_d.jpg    1x,
+                        ./images/portfolio/8-lab_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/8-lab_t.jpg    1x,
+                        ./images/portfolio/8-lab_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/8-lab_m.jpg    1x,
+                        ./images/portfolio/8-lab_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/8-lab_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="customer__description">
+                  <h2 class="customer__company">Проект LAB</h2>
+                  <p class="customer__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="customer" href="">
+                <div class="customer__vor-overlay">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/9-growing-business_d.jpg    1x,
+                        ./images/portfolio/9-growing-business_d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/9-growing-business_t.jpg    1x,
+                        ./images/portfolio/9-growing-business_t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/9-growing-business_m.jpg    1x,
+                        ./images/portfolio/9-growing-business_m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/9-growing-business_m.jpg"
+                      alt="Изображение ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                  <div class="customer__overlay">
+                    <p class="customer__overlay-descr">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer__description">
+                  <h2 class="customer__company">Growing Business</h2>
+                  <p class="customer__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__adress">
+          <a class="logo logo--down" href="./index.html">
+            Web<span class="logo__footer">Studio</span></a
+          >
+          <address>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__decor"
+                  href="https://goo.gl/maps/PAiW9LLceKNYEAaVA"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__decor--transparency"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__decor--transparency" href="tel:380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <p class="join__title">присоединяйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                aria-label="Icon Instagram"
+              >
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                aria-label="Icon Twitter"
+              >
+                <svg
+                  class="social-list__icon adress-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                aria-label="Icon Facebook"
+              >
+                <svg
+                  class="social-list__icon adress-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                aria-label="Icon Linkedin"
+              >
+                <svg
+                  class="social-list__icon adress-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscription" autocomplete="off">
+          <label class="subscription__label" for="subscription"
+            >Подпишитесь на рассылку</label
+          >
+          <div class="subscription__form">
+            <input
+              class="subscription__input"
+              type="email"
+              name="subscription"
+              id="subscription"
+              placeholder="E-mail"
+            />
+            <button class="subscription__button" type="submit">
+              <span class="subscription__send">Подписаться</span>
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
