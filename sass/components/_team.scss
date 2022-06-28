@@ -8,6 +8,7 @@
   &__list {
     display: flex;
     margin: -15px;
+    flex-wrap: wrap;
 
     @extend %listStyleNone;
 
@@ -63,8 +64,6 @@
 }
 
 .team__photo {
-  @media screen and (max-width: 1199px) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  object-fit: cover;
 }
