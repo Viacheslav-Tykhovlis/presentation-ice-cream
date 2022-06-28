@@ -1502,4 +1502,80 @@ img {
   color: #2196f3;
   text-decoration: none;
 }
+
+.shopper {
+  background-color: #fff5f6;
+  height: 100vh;
+}
+
+.shopper__title {
+  margin-bottom: 30px;
+}
+
+.shopper__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopper__elements {
+  -ms-flex-preferred-size: calc((100% - 40px) / 2);
+      flex-basis: calc((100% - 40px) / 2);
+}
+
+.shopper__elements--one {
+  margin-right: 40px;
+}
+
+.shopper__name {
+  color: #106dd8;
+  margin-bottom: 30px;
+}
+
+.shopper__item {
+  font-size: 18px;
+  color: #d41443;
+}
+
+.shopper__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.benefits {
+  background-color: #fff5f6;
+  height: 100vh;
+}
+
+.benefits__title {
+  margin-bottom: 30px;
+}
+
+.benefits__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__elements {
+  -ms-flex-preferred-size: calc((100% - 40px) / 2);
+      flex-basis: calc((100% - 40px) / 2);
+}
+
+.benefits__elements--one {
+  margin-right: 50px;
+}
+
+.benefits__name {
+  color: #106dd8;
+  margin-bottom: 30px;
+}
+
+.benefits__item {
+  font-size: 18px;
+  color: #d41443;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+.shopper {
+  background-color: #fff5f6;
+  height: 100vh;
+}
+
+.shopper__title {
+  margin-bottom: 30px;
+}
+
+.shopper__general {
+  display: flex;
+}
+
+.shopper__elements {
+  flex-basis: calc((100% - 40px) / 2);
+
+  &--one {
+    margin-right: 40px;
+  }
+}
+
+.shopper__name {
+  color: rgb(16, 109, 216);
+
+  margin-bottom: 30px;
+}
+
+.shopper__item {
+  font-size: 18px;
+  color: #d41443;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

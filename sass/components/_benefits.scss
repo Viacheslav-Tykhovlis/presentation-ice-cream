@@ -1,0 +1,35 @@
+.benefits {
+  background-color: #fff5f6;
+  height: 100vh;
+}
+
+.benefits__title {
+  margin-bottom: 30px;
+}
+
+.benefits__general {
+  display: flex;
+}
+
+.benefits__elements {
+  flex-basis: calc((100% - 40px) / 2);
+
+  &--one {
+    margin-right: 50px;
+  }
+}
+
+.benefits__name {
+  color: rgb(16, 109, 216);
+
+  margin-bottom: 30px;
+}
+
+.benefits__item {
+  font-size: 18px;
+  color: #d41443;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
