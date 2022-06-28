@@ -1,5 +1,5 @@
 .team {
-  background-color: #f5f4fa;
+  background-color: #fff5f6;
 
   &__title {
     margin-bottom: 50px;
@@ -45,20 +45,20 @@
 
 .team__name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $colorH2-h3;
+  color: #d41443;
   margin-bottom: 10px;
 }
 
 .team__position {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $colorText;
+  color: #ce526f;
   margin-bottom: 16px;
 }
 
