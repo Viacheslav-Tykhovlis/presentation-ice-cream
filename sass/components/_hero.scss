@@ -15,7 +15,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/hero_d.jpg);
+      url(../../images/present/TeamSeven.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
