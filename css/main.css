@@ -47,20 +47,12 @@ body {
 }
 
 .title {
-  font-size: 28px;
+  font-size: 40px;
   line-height: 1.27;
   text-align: center;
   letter-spacing: 0.03em;
   color: #d41443;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 36px;
-    line-height: 1.17;
-    margin-bottom: 50px;
-  }
+  margin-bottom: 40px;
 }
 
 h1,
@@ -82,18 +74,17 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -828,7 +819,7 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__list {
@@ -857,8 +848,8 @@ img {
 }
 
 .team__descr {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .team__member {
@@ -886,14 +877,23 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ce526f;
-  margin-bottom: 16px;
+  color: #8a1c36;
+  margin-bottom: 10px;
 }
 
 .team__photo {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.team__section {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #0d4683;
 }
 
 .social-list__icon {
@@ -1519,16 +1519,27 @@ img {
 
 .shopper__name {
   color: #106dd8;
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
+@counter-style lllist {
+  system: cyclic;
+  symbols: "\2744";
+  suffix: " ";
+}
+
+.shopper__list {
+  list-style-type: lllist;
+}
+
 .shopper__item {
-  font-size: 18px;
+  font-size: 24px;
   color: #d41443;
 }
 
 .shopper__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 
 .benefits {
@@ -1561,11 +1572,8 @@ img {
 }
 
 .benefits__item {
-  font-size: 18px;
+  font-size: 24px;
   color: #d41443;
-}
-
-.benefits__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
