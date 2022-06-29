@@ -2,7 +2,7 @@
   background-color: #fff5f6;
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__list {
@@ -22,8 +22,8 @@
   }
 
   &__descr {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -53,11 +53,20 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ce526f;
-  margin-bottom: 16px;
+  color: #8a1c36;
+  margin-bottom: 10px;
 }
 
 .team__photo {
   width: 100%;
   object-fit: cover;
+}
+
+.team__section {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #0d4683;
 }

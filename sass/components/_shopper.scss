@@ -21,15 +21,25 @@
 
 .shopper__name {
   color: rgb(16, 109, 216);
-
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
+@counter-style lllist {
+  system: cyclic;
+  symbols: "\2744";
+  suffix: " ";
+}
+
+.shopper__list {
+  list-style-type: lllist;
+}
+
 .shopper__item {
-  font-size: 18px;
+  font-size: 24px;
   color: #d41443;
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 14px;
   }
 }
