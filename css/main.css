@@ -10,7 +10,7 @@
           align-items: center;
 }
 
-.header-nav__list, .contact-quickly, .feature__list, .contacts, .promo__list, .team__list, .social-list, .clients__list, .filter, .portfolio, .mobile-menu__list, .mobile-menu__contacts, .mobile-menu__social {
+.header-nav__list, .contact-quickly, .feature__list, .contacts, .promo__list, .team__list, .social-list, .clients__list, .filter, .portfolio, .mobile-menu__list, .mobile-menu__contacts, .mobile-menu__social, .thanks__list {
   list-style-type: none;
 }
 
@@ -1618,6 +1618,92 @@ img {
   text-decoration: underline;
 }
 
+.thanks {
+  background-color: #fff5f6;
+}
+
+.thanks__title {
+  margin-bottom: 30px;
+}
+
+.thanks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  .thanks__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .thanks__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.thanks__descr {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.thanks__member {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid transparent;
+  margin: 10px;
+  -ms-flex-preferred-size: calc((100% - 400px) / 2);
+      flex-basis: calc((100% - 400px) / 2);
+  height: 500px;
+}
+
+.thanks__name {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #d41443;
+  margin-bottom: 10px;
+}
+
+.thanks__position {
+  font-size: 19px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #8a1c36;
+  margin-bottom: 10px;
+}
+
+.thanks__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.thanks__section {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #0d4683;
+}
+
 .tech-general {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,5 +1743,91 @@ img {
   font-size: 40px;
   margin-bottom: 30px;
   text-decoration: underline;
+}
+
+.thanks {
+  background-color: #fff5f6;
+}
+
+.thanks__title {
+  margin-bottom: 30px;
+}
+
+.thanks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  .thanks__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .thanks__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.thanks__descr {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.thanks__member {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid transparent;
+  margin: 10px;
+  -ms-flex-preferred-size: calc((100% - 400px) / 2);
+      flex-basis: calc((100% - 400px) / 2);
+  height: 500px;
+}
+
+.thanks__name {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #d41443;
+  margin-bottom: 10px;
+}
+
+.thanks__position {
+  font-size: 19px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #8a1c36;
+  margin-bottom: 10px;
+}
+
+.thanks__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.thanks__section {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #0d4683;
 }
 /*# sourceMappingURL=main.css.map */
