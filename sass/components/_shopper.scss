@@ -15,7 +15,7 @@
   flex-basis: calc((100% - 40px) / 2);
 
   &--one {
-    margin-right: 40px;
+    margin-right: 80px;
   }
 }
 
@@ -40,6 +40,6 @@
   color: #d41443;
 
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
   }
 }
