@@ -89,22 +89,24 @@
 }
 
 .hero__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  font-family: "Titan one", sans-serif;
   font-weight: 900;
   // font-size: 26px;
   // line-height: 1.65;
+  font-size: 80px;
+
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #5c69fb;
+  color: #d41443;
   // margin-bottom: 30px;
+  margin-top: 150px;
 
   @media screen and (min-width: 1200px) {
-    font-size: 60px;
     line-height: 1.36;
     text-transform: capitalize;
   }
